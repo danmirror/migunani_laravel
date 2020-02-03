@@ -1,0 +1,392 @@
+html, body {
+  height: 100%;
+}
+@media(min-width:1024px){
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+	#page-content-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media (max-width: 991px) {
+	#page-content-wrapper {
+		margin-left: -1px;
+	}
+	#page-content-wrapper .content-admin {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	#page-content-wrapper .content-admin.dashboard {
+		min-height: calc(100% - 281px);
+	}
+	#page-content-wrapper .content-admin.create {
+		min-height: calc(100% - 305px);
+	}
+	#page-content-wrapper .content-admin.overview {
+		min-height: calc(100% - 217px);
+	}
+}
+/* selesai */
+@media(max-width: 991px) {
+ 
+	body>.container {
+		min-height: calc(100% - 277px);
+	}
+	body>.container-fluid {
+		min-height: calc(100% - 398px);
+	}
+}
+.nav{
+  max-height:100px!important; 
+  max-width:150px!important;
+
+}
+
+
+.nav-item{
+  font-weight: bold;
+
+}
+
+@media(min-width:768px){
+  .nav{
+    margin-left: 25%;
+  }
+  .content_img{
+    height:150px; 
+    width:150px;
+     object-fit:contain;
+     border-radius: 30%;
+   }
+}
+
+@media(max-width:560px){
+  .content_img{
+    height:80px; 
+    width:80px;
+     object-fit:contain;
+     border-radius: 20%;
+   }
+}
+
+
+.footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #333;
+  color: #aaa;
+}
+ 
+.footer p{
+    font-size: 1em;
+}
+
+.carousel{
+    margin-top: 0px;
+}
+.card{
+  margin-top:30px;
+}
+
+.hr-admin{
+  width:50%;
+}
+#foot{
+    /* min-height: 510px; */
+    margin-top:20px;
+}
+
+/* media social */
+.social {
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none!important;
+  margin: 5px 2px;
+}
+
+.social:hover {
+    opacity: 0.7;
+    color:rgb(54, 160, 202);
+}
+
+/* The Modal (background) */
+.modal-foot{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 20rem; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+.modal-content-foot {
+  background-color: #fefefe;
+  margin: auto;
+  font-size: 35px;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  /* margin-bottom: 2rem; */
+  /* position: absolute; */
+  border-radius: .2em;
+}
+@media(max-width:425px){
+  .modal-content-foot {
+    font-size: 25px;
+    width: 80%;
+  }
+}
+
+/* The Close Button */
+.close-no {
+  color: #000!important;
+  /* float: right; */
+  font-size: 28px;
+  font-weight: bold;
+ 
+}
+
+.close-no:hover,
+.close-no:focus {
+  color: #c73737!important;
+  text-decoration: none!important;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+ body {
+    overflow-x: hidden;
+    
+  }
+  
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  /* #page-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  } */
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  #thumnails{
+    height : 250px !important;
+    width : 100%;
+    object-fit: cover;
+  }
+  .thumnails-admin{
+    width : 250px;
+    height : 250px; 
+    object-fit:cover;
+  }
+  
+
+
+  .slider {
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* admin padding nilai */
+
+.admin-padding{
+  padding: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 8%;
+  text-align: center;
+  margin: 0px auto;
+  font-size: 40px;
+}
+#file-index{
+    /* background-color: rgb(253, 133, 133); */
+    border :3px solid #333;
+}
+#gambar{
+  /* background-color: rgb(107, 206, 245); */
+  border :3px solid #333;
+}
+#video{
+  /* background-color: rgb(78, 154, 184); */
+  border :3px solid #333;
+}
+.chart-admin{
+  width: 800px;
+  margin: 0px auto;
+}
+@media (max-width:1024px){
+  .chart-admin{
+    width: 600px;
+    margin: 0px auto;
+  }
+}
+@media (max-width:768px){
+  .admin-padding{
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+  }
+  .chart-admin{
+    width: 400px;
+    margin: 0px auto;
+  }
+}
+@media (max-width:425px){
+  .admin-padding{
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+  }
+  .chart-admin{
+    width: 300px;
+    margin: 0px auto;
+  }
+}
+
+/* button video */
+.wrapper{
+  display:table;
+  width:auto;
+  position:relative;
+ 
+}
+.playpause {
+  background-image:url("/image/play4.png");
+  background-repeat:no-repeat;
+  width:20%!important;
+  height:20%!important;
+  position:absolute;
+  left:0%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  margin:auto;
+  background-size:contain;
+  background-position: center;
+}
+/* akhir button */
+
+
+.slick-lightbox img, .slick-lightbox iframe{
+  width: 500px !important;
+  height: 300px !important;
+  object-fit: cover;
+}
+iframe{
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+@media (max-width:675px){
+  #thumnails, .thumnails-admin{
+    height: 100px;
+  }
+  
+  .slick-lightbox img, .slick-lightbox iframe{
+    width: 200px !important;
+    height: 100px !important;
+  }
+  .banner{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    }
+}
+@media(min-width:678px){
+
+  .slick-lightbox img, .slick-lightbox iframe{
+    width: 400px !important;
+    height: 200px !important;
+  }
+
+  .about{
+    margin-left: 9rem!important;
+  }
+  .banner{
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  }
+}
+@media(min-width:1440px){
+  .banner{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    }
+}
+
+.icon-sidebar:hover{
+  
+  color: rgb(59, 91, 152);
+
+  /* color:rgb(54, 160, 202); */
+}
+#menu-toggle{
+  border : 0px solid #333;
+  border-radius: 3px;
+  font-size:25px;
+}
